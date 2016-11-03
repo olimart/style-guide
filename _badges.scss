@@ -1,0 +1,30 @@
+$badge-padding-x: .25rem;
+$badge-padding-y: .4rem;
+$badge-border-radius: .25rem;
+$badge-font-size: 75%;
+
+.label,
+.status,
+.badge {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: $badge-padding-x $badge-padding-y;
+  font-size: $badge-font-size;
+  font-weight: 700;
+  line-height: 1;
+  color: $white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: $badge-border-radius;
+
+  &.badge-default { background-color: $default; }
+  &.badge-primary { background-color: $primary; }
+  &.badge-success { background-color: $success; }
+  &.badge-info { background-color: $info; }
+  &.badge-warning { background-color: $warning; }
+  &.badge-danger { background-color: $danger; }
+  &.badge-special { background-color: $purple; }
+  &.badge-dark-grayish-blue { background-color: $dark-grayish-blue; }
+  &.badge-grey { background-color: $grey; }
+}

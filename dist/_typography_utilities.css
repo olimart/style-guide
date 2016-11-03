@@ -1,0 +1,28 @@
+.regular {
+  font-weight: normal; }
+
+.caps {
+  text-transform: uppercase; }
+
+.left {
+  text-align: left; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.justify {
+  text-align: justify; }
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.list-reset {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline li {
+  display: inline-block; }

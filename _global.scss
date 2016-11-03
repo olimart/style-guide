@@ -1,0 +1,25 @@
+$black:              #111;
+$blue:               #414ef9;
+$blue-light:         #309ff7;
+$blue-lighter:       rgba(0,119,204,.125);
+$blue-translucid:    rgba(65,78,249,.5);
+$green:              #28db67;
+$green-translucid:   rgba(40,219,103,.2);
+$dark-grayish-blue:  #839197;
+$light-grayish-blue: #f5f7f9;
+$grey:               #7e7e82;
+$grey-light:         #f6f6f7;
+$grey-lighter:       #d8d8dc;
+$navy:               #182433;
+$purple:             #9f68f0;
+$red:                #ff416c;
+$taupe:              #6f8aa4;
+$white:              #fff;
+$yellow:             #faca05;
+
+$default: $black;
+$primary: $blue;
+$success: $green;
+$info:    $blue-light;
+$warning: $yellow;
+$danger:  $red;

@@ -1,0 +1,172 @@
+$form-field-font-family: inherit;
+$form-field-font-size: $font-size-base;
+$form-field-height: 2.25rem;
+$form-field-padding-x: .75rem;
+$form-field-padding-y: .5rem;
+$form-field-border-radius: 4px;
+
+@mixin basic-style {
+  display: block;
+  border: 1px solid $grey-lighter;
+  border-radius: $form-field-border-radius;
+  width: 100%;
+}
+
+@mixin has-focus {
+  &:focus {
+    outline: 0;
+    border: 1px solid $primary;
+  }
+}
+
+.form-group { margin-bottom: 1rem; }
+
+/* Help text */
+.form-text {
+  display: block;
+  margin-top: .25rem;
+  color: $grey;
+}
+
+.form-control-file,
+.form-control-range {
+  display: block;
+}
+
+input,
+select,
+textarea,
+fieldset {
+  font-family: $form-field-font-family;
+  font-size: $form-field-font-size;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+label {
+  vertical-align: middle;
+  margin-bottom: .25rem;
+  color: inherit;
+  display: block;
+}
+
+input[type=text],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week] {
+  height: $form-field-height;
+  padding: $form-field-padding-y $form-field-padding-x;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  @include basic-style;
+  @include has-focus;
+}
+
+select {
+  line-height: 1.75;
+  padding: .5rem;
+  @include basic-style;
+  @include has-focus;
+}
+
+select:not([multiple]) {
+  height: $form-field-height;
+  vertical-align: middle;
+}
+
+select:-internal-list-box option:checked {
+  background-color: $primary;
+}
+
+textarea {
+  line-height: 1.75;
+  padding: $form-field-padding-y $form-field-padding-x;
+  @include basic-style;
+  @include has-focus;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+/* Check box & radio button */
+.form-check.disabled .form-check-label {
+  color: $grey;
+  cursor: not-allowed;
+}
+
+.form-check-label {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.form-check-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.form-check-inline+.form-check-inline {
+  margin-left: .75rem;
+}
+
+.form-check-input:only-child {
+  position: static;
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: .25rem;
+  margin-left: -1.25rem;
+}
+
+/* Validation */
+.has-success .custom-control,
+.has-success .form-check-inline,
+.has-success .form-check-label,
+.has-success .form-control-feedback,
+.has-success .form-control-label { color: $success; }
+
+.has-warning .custom-control,
+.has-warning .form-check-inline,
+.has-warning .form-check-label,
+.has-warning .form-control-feedback,
+.has-warning .form-control-label { color: $warning; }
+
+.has-danger .custom-control,
+.has-danger .form-check-inline,
+.has-danger .form-check-label,
+.has-danger .form-control-feedback,
+.has-danger .form-control-label { color: $danger; }
+
+.has-success .form-control,
+.has-success .form-control:focus { border-color: $success; }
+.has-warning .form-control,
+.has-warning .form-control:focus { border-color: $warning; }
+.has-danger .form-control,
+.has-danger .form-control:focus { border-color: $danger; }
+
+.form-control-danger,
+.form-control-success,
+.form-control-warning {
+  padding-right: 2.25rem;
+  background-repeat: no-repeat;
+  background-position: center right .625rem;
+  -webkit-background-size: 1.25rem 1.25rem;
+  background-size: 1.25rem 1.25rem;
+}

@@ -1,0 +1,39 @@
+$alert-border-radius: .25rem;
+$alert-padding-x: .75rem;
+$alert-padding-y: .75rem;
+
+.alert {
+  border: 1px solid transparent;
+  border-radius: $alert-border-radius;
+  margin-bottom: 1rem;
+  padding: $alert-padding-x $alert-padding-y;
+
+  &.alert-success {
+    background-color: $success;
+    border-color: darken($green, 10%);
+  }
+  &.alert-info {
+    background-color: $info;
+    border-color: darken($info, 10%);
+  }
+  &.alert-warning {
+    background-color: $warning;
+    border-color: darken($warning, 10%);
+  }
+  &.alert-danger {
+    background-color: $danger;
+    border-color: darken($danger, 10%);
+  }
+  &.alert-special {
+    background-color: $purple;
+    border-color: darken($purple, 10%);
+  }
+  &.alert-dark-grayish-blue {
+    background-color: $dark-grayish-blue;
+    border-color: darken($dark-grayish-blue, 10%);
+  }
+  &.alert-grey-light {
+    background-color: $grey-light;
+    border-color: darken($grey-light, 10%);
+  }
+}
