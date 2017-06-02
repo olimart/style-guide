@@ -1,3 +1,12 @@
+.m0 {
+  margin: 0; }
+
+.mb0 {
+  margin-bottom: 0; }
+
+.mt0 {
+  margin-top: 0; }
+
 .m1 {
   margin: 0.5rem; }
 
@@ -34,6 +43,10 @@
 .mt4 {
   margin-top: 4rem; }
 
+.mx0 {
+  margin-left: 0;
+  margin-right: 0; }
+
 .mx1 {
   margin-left: 0.5rem;
   margin-right: 0.5rem; }
@@ -54,6 +67,10 @@
   margin-left: auto;
   margin-right: auto; }
 
+.my0 {
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .my1 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
@@ -70,6 +87,9 @@
   margin-top: 4rem;
   margin-bottom: 4rem; }
 
+.ml0 {
+  margin-left: 0; }
+
 .ml1 {
   margin-left: 0.5rem; }
 
@@ -81,6 +101,9 @@
 
 .ml4 {
   margin-left: 4rem; }
+
+.mr0 {
+  margin-right: 0; }
 
 .mr1 {
   margin-right: 0.5rem; }
@@ -105,6 +128,15 @@
 
 .max-width4 {
   max-width: 64rem; }
+
+.p0 {
+  padding: 0; }
+
+.pb0 {
+  padding-bottom: 0; }
+
+.pt0 {
+  padding-top: 0; }
 
 .p1 {
   padding: 0.5rem; }
@@ -142,6 +174,10 @@
 .pt4 {
   padding-top: 4rem; }
 
+.px0 {
+  padding-left: 0;
+  padding-right: 0; }
+
 .px1 {
   padding-left: 0.5rem;
   padding-right: 0.5rem; }
@@ -157,6 +193,10 @@
 .px4 {
   padding-left: 4rem;
   padding-right: 4rem; }
+
+.py1 {
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .py1 {
   padding-top: 0.5rem;
@@ -301,7 +341,6 @@ a {
   text-align: justify; }
 
 dl, ol, ul {
-  margin-top: 0;
   margin-bottom: 1rem; }
 
 .list-reset {
@@ -342,7 +381,7 @@ pre {
   color: white;
   text-decoration: none;
   line-height: 1.25;
-  padding: 0.75rem 2.5rem;
+  padding: 0.55rem 1.8rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -374,10 +413,13 @@ pre {
     cursor: not-allowed;
     opacity: .65; }
   .btn.btn-sm {
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    border-radius: .2rem; }
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem; }
   .btn.btn-lg {
+    padding: 0.75rem 2.5rem; }
+  .btn.btn-xl {
+    padding: 0.75rem 2.5rem;
     font-size: 1.25rem; }
   .btn.btn-block {
     width: 100%; }
@@ -487,7 +529,8 @@ label {
   vertical-align: middle;
   margin-bottom: .25rem;
   color: inherit;
-  display: block; }
+  display: block;
+  font-weight: bold; }
 
 input[type=text],
 input[type=date],
@@ -564,18 +607,27 @@ fieldset {
   color: #7e7e82;
   cursor: not-allowed; }
 
+.checkbox label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: normal; }
+
+/* vertical radio button/checkbox */
 .form-check-label {
   padding-left: 1.25rem;
   margin-bottom: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: normal; }
 
+/* inline radio button/checkbox */
 .form-check-inline {
   position: relative;
   display: inline-block;
   padding-left: 1.25rem;
   margin-bottom: 0;
   vertical-align: middle;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: normal; }
 
 .form-check-inline + .form-check-inline {
   margin-left: .75rem; }
@@ -586,7 +638,8 @@ fieldset {
 .form-check-input {
   position: absolute;
   margin-top: .25rem;
-  margin-left: -1.25rem; }
+  margin-left: -1.25rem;
+  font-weight: normal; }
 
 /* Validation */
 .has-success .custom-control,
@@ -643,7 +696,7 @@ th {
 
 th,
 td {
-  padding: 0.3rem 1rem;
+  padding: 0.4rem 1rem;
   line-height: inherit; }
 
 th {
@@ -812,3 +865,51 @@ td {
     display: block; }
   .dropdown.open .data-details {
     display: block; }
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .25rem; }
+  .pagination li {
+    display: inline; }
+    .pagination li:hover {
+      background-color: #414ef9;
+      color: #fff; }
+    .pagination li a {
+      position: relative;
+      float: left;
+      padding: .5rem .75rem;
+      margin-left: -1px;
+      text-decoration: none;
+      color: #414ef9;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      margin-left: -1px; }
+      .pagination li a:hover, .pagination li a:focus {
+        z-index: 2;
+        background-color: #414ef9;
+        border-color: #414ef9;
+        color: #fff; }
+    .pagination li:first-child a {
+      margin-left: 0;
+      border-bottom-left-radius: .25rem;
+      border-top-left-radius: .25rem; }
+    .pagination li:last-child a {
+      border-bottom-right-radius: .25rem;
+      border-top-right-radius: .25rem; }
+  .pagination .active a,
+  .pagination .active a:hover,
+  .pagination .active a:focus {
+    z-index: 3;
+    background-color: #414ef9;
+    border-color: #414ef9;
+    color: #fff; }
+  .pagination .disabled a,
+  .pagination .disabled a:hover,
+  .pagination .disabled a:focus {
+    color: #7e7e82;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.125); }

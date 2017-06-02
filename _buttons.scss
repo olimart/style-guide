@@ -1,11 +1,19 @@
 $button-border-width: 2px;
 $button-font-family: $font-family-base;
 $button-font-size: 1rem;
+$button-sm-font-size: .875rem;
 $button-font-weight: 400;
-$button-padding-x: 2.5rem;
-$button-padding-y: .75rem;
+$button-padding-x: 1.8rem;
+$button-padding-y: .55rem;
+$button-sm-padding-x: .5rem;
+$button-sm-padding-y: .25rem;
+$button-lg-padding-x: 2.5rem;
+$button-lg-padding-y: .75rem;
+$button-xl-padding-x: $button-lg-padding-x;
+$button-xl-padding-y: $button-lg-padding-y;
 $button-line-height: 1.25;
 $button-border-radius: .25rem;
+$button-sm-border-radius: .2rem;
 
 .btn {
   display: inline-block;
@@ -53,11 +61,15 @@ $button-border-radius: .25rem;
   }
 
   &.btn-sm {
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    border-radius: .2rem;
+    padding: $button-sm-padding-y $button-sm-padding-x;
+    font-size: $button-sm-font-size;
+    border-radius: $button-sm-border-radius;
   }
 
-  &.btn-lg { font-size: 1.25rem; }
+  &.btn-lg { padding: $button-lg-padding-y $button-lg-padding-x; }
+  &.btn-xl {
+    padding: $button-xl-padding-y $button-xl-padding-x;
+    font-size: 1.25rem;
+  }
   &.btn-block { width: 100%; }
 }

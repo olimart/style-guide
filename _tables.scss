@@ -1,6 +1,6 @@
 $table-header-font-weight: 500;
 $table-cell-padding-x: 1rem;
-$table-cell-padding-y: .3rem;
+$table-cell-padding-y: .4rem;
 
 @mixin table-borders-bottom {
   th { border-bottom: 2px solid rgba(0, 0, 0, .125); }

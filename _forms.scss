@@ -49,6 +49,7 @@ label {
   margin-bottom: .25rem;
   color: inherit;
   display: block;
+  font-weight: bold;
 }
 
 input[type=text],
@@ -106,12 +107,21 @@ fieldset {
   cursor: not-allowed;
 }
 
+.checkbox label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* vertical radio button/checkbox */
 .form-check-label {
   padding-left: 1.25rem;
   margin-bottom: 0;
   cursor: pointer;
+  font-weight: normal;
 }
 
+/* inline radio button/checkbox */
 .form-check-inline {
   position: relative;
   display: inline-block;
@@ -119,6 +129,7 @@ fieldset {
   margin-bottom: 0;
   vertical-align: middle;
   cursor: pointer;
+  font-weight: normal;
 }
 
 .form-check-inline+.form-check-inline {
@@ -133,6 +144,7 @@ fieldset {
   position: absolute;
   margin-top: .25rem;
   margin-left: -1.25rem;
+  font-weight: normal;
 }
 
 /* Validation */
