@@ -1,3 +1,7 @@
 .pull-left { float: left; }
 .pull-right { float: right; }
-
+.hidden { display: none !important }
+[hidden],
+template {
+  display: none;
+}
